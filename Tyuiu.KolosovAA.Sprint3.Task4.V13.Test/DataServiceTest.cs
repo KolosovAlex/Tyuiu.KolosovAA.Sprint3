@@ -8,7 +8,7 @@ namespace Tyuiu.KolosovAA.Sprint3.Task4.V13.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculate()
+        public void ValidCalc()
         {
             DataService ds = new DataService();
             int startValue = -5;

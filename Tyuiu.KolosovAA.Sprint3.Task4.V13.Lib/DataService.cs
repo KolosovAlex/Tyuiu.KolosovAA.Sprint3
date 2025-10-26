@@ -11,20 +11,19 @@ namespace Tyuiu.KolosovAA.Sprint3.Task4.V13.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            int x;
-            double sp = 0;
-            for (x = startValue; x <= stopValue; x++)
+            double res = 1;
+            for (int i = startValue; i <= stopValue; i++)
             {
-                if (x == 0)
+                if (i == 0)
                 {
                     break;
                 }
                 else
                 {
-                    sp = sp + (Math.Sin(x) / Math.Cos(x));
+                    res = res * (Math.Sin(i) / Math.Cos(i));
                 }
             }
-            return Math.Round(sp, 3);
+            return Math.Round(res, 3);
         }
     }
 }
